@@ -336,6 +336,26 @@ main {
   border-radius: 20px;
 }
 
+/* Avatar: keep image square, auto-crop and scale */
+.avatar-box img,
+.avatar-box .profile-avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover; /* crop to fill */
+  display: block;
+  border-radius: 14px;
+}
+
+/* Smaller avatar on narrow screens */
+@media (max-width: 420px) {
+  .avatar-box img,
+  .avatar-box .profile-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+  }
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -396,6 +416,19 @@ main {
   opacity: 1;
   visibility: visible;
 }
+
+.download-resume { margin-top: 12px; text-align: center; }
+
+.download-resume .download-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+  border-radius: 8px;
+  font-weight: var(--fw-500);
+}
+
+.download-resume .download-btn:hover { opacity: 0.9; }
 
 .contacts-list {
   display: grid;
@@ -985,6 +1018,22 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(var(--scale));
+}
+
+.project-github-link {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+  color: var(--white-2);
+  background: var(--onyx);
+  padding: 6px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: var(--fw-500);
+}
+
+.project-github-link ion-icon { font-size: 16px; color: var(--orange-yellow-crayola); }
   font-size: 20px;
   padding: 18px;
   border-radius: 12px;

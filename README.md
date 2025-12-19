@@ -39,6 +39,21 @@ git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
 
 If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
 
+## Publishing to GitHub Pages
+
+To publish this portfolio on GitHub Pages (recommended):
+
+1. Create a repository named `kosaraju_joshitha_portfolio` on GitHub and push the project (`index.html`, `assets/`, etc.) to the `main` branch.
+2. On GitHub, go to **Settings → Pages**, set **Source** to `Deploy from a branch` and choose `main` / `root`.
+3. After a few minutes your site will be available at: `https://<your-github-username>.github.io/kosaraju_joshitha_portfolio/`.
+
+Notes:
+
+- This project already uses relative asset paths (e.g. `./assets/css/style.css`), so it should work without changes.
+- Add an empty file named `.nojekyll` at the repo root if GitHub Pages ignores files/folders starting with `_`.
+
+---
+
 ## License
 
 MIT
